@@ -2,7 +2,7 @@ package com.booleanuk.api.requests;
 
 public class Book {
     public static int nextId = 1;
-    private int id;
+    private final int id;
     private String title;
     private int numPages;
     private String author;
@@ -14,10 +14,6 @@ public class Book {
         this.numPages = numPages;
         this.author = author;
         this.genre = genre;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getId() {
